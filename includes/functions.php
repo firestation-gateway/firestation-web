@@ -117,6 +117,11 @@ function getAppConfigFileName() {
   return $puggyConf['back_config'];
 }
 
+function getVersion() {
+  $puggyConf = getConfig();
+  return $puggyConf['version'];
+}
+
 function loadAppConfig() {
   $config_file = getAppConfigFileName();
   return yaml_parse_file($config_file);

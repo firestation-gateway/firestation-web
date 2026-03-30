@@ -17,6 +17,8 @@ if (!isLoggedIn() && !preg_match('/login(.php)?/', currentPage())) {
 
 $app_config = loadAppConfig();
 
+$WEBAPP_VERSION = getVersion();
+
 // $config = load_config($config_file);
 // $config_generated = false;
 // if ($config == false) {
