@@ -108,7 +108,7 @@ function serviceRestart()
 }
 function serviceLogs() 
 {
-    $output = shell_exec("sudo /usr/bin/journalctl -u firestation-gateway.service -n 20 --no-pager");
+    $output = shell_exec("sudo /usr/bin/journalctl -u firestation-gateway.service -n 40 --no-pager");
     return $output;
 }
 
